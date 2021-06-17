@@ -38,7 +38,7 @@ let getrandomStyle = () => {
 
 let btn = document.querySelector("#add-season");
 let week = 1;
-btn.addEventListener('click', function (event) {git
+btn.addEventListener('click', function (event) {
   finalHtml=putSeason(week);
   fashionTable.innerHTML = finalHtml.join("\n");
   week++;
