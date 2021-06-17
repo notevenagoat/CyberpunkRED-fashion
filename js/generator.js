@@ -2,7 +2,7 @@
 const clothingStyles = ['Bag Lady Chic', 'Gang Colors', 'Generic Chic', 'Bohemian', 'Leisurewear', 'Nomad Leathers', 'Asia Pop', 'Urban Flash', 'Businesswear'];
 
 let getrandomStyle = () => {
-  let randomStyle = clothingStyles[Math.floor(Math.random() * 8)]
+  let randomStyle = clothingStyles[Math.floor(Math.random() * 9)]
   return randomStyle;
   
   }
