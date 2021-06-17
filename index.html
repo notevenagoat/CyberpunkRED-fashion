@@ -15,29 +15,42 @@
      integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
      crossorigin="anonymous"></script>
 
-     <script src="./generator.js" defer></script> 
+     <script src="./js/generator.js" defer></script> 
 </head>
 
 <body>
-    <table id="myTable" class="table table-borderless table-striped table-earning">
-        <thead>
-          <tr>
-            <th>date</th>
-            <th>file name</th>
-          </tr>
-        </thead>
-        <tbody id="testBody"></tbody>
-      </table>
-      <script>
-        const items1 = [
-          { date: "10/17/2018", name: "john doe" },
-          { date: "10/18/2018", name: "jane doe" },
-        ];
-        const items2 = [
-          { date: "10/17/2019", name: "john doe" },
-          { date: "10/18/2019", name: "jane doe" },
-        ];
-        
-      </script>
+  <table class="table table-dark table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Bottoms</th>
+        <th scope="col">Top</th>
+        <th scope="col">Jacket</th>
+        <th scope="col">Footwear</th>
+        <th scope="col">Jewelry</th>
+        <th scope="col">Hat</th>
+        <th scope="col">Accessory</th>
+      </tr>
+    </thead>
+    <tbody  id="fashionTable">
+      <tr  >
+        <tr >
+          <th scope="row" >value</th>
+          <td>${value[0]}</td>
+          <td>${value[1]}</td>
+          <td>${value[2]}</td>
+          <td>${value[3]}</td>
+          <td>${value[4]}</td>
+          <td>${value[5]}</td>
+          <td>${value[6]}</td>
+        </tr>`
+        <tr >
+         
+        </tr>`
+      </tr>
+   
+    </tbody>
+  </table>
+  <button type="button" class="btn btn-dark" id="add-season">Add season</button>
 </body>
 </html>

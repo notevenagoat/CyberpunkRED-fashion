@@ -22,7 +22,7 @@ let getrandomStyle = () => {
   let putSeason = (week) => {
      let htmlSeason = getSeason();
        tableContent = `
-    <tr>
+         <tr>
         <th scope="row">${week}</th>
         <td>${htmlSeason[0]}</td>
         <td>${htmlSeason[1]}</td>
@@ -32,6 +32,7 @@ let getrandomStyle = () => {
         <td>${htmlSeason[5]}</td>
         <td>${htmlSeason[6]}</td>
       </tr>`
+
       htmlFashionTable.push(tableContent);
       return htmlFashionTable;
   }
@@ -41,5 +42,6 @@ let week = 1;
 btn.addEventListener('click', function (event) {
   finalHtml=putSeason(week);
   fashionTable.innerHTML = finalHtml.join("\n");
+  
   week++;
   });
