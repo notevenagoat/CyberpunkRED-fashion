@@ -1,5 +1,10 @@
 
 const clothingStyles = ['Bag Lady Chic', 'Gang Colors', 'Generic Chic', 'Bohemian', 'Leisurewear', 'Nomad Leathers', 'Asia Pop', 'Urban Flash', 'Businesswear'];
+const fashionTable = document.getElementById("fashionTable");
+let btn = document.querySelector("#add-season");
+let clearBtn = document.querySelector("#clear-btn");
+let week = 1;
+let htmlFashionTable = [];
 
 let getrandomStyle = () => {
   let randomStyle = clothingStyles[Math.floor(Math.random() * 9)]
@@ -7,7 +12,7 @@ let getrandomStyle = () => {
   
   }
 
-  const fashionTable = document.getElementById("fashionTable");
+
   
   let getSeason = () => {
     let currentSeason=[];
@@ -17,7 +22,8 @@ let getrandomStyle = () => {
     }
     return (currentSeason);
   }
-  let htmlFashionTable = [];
+
+  
 
   let putSeason = (week) => {
      let htmlSeason = getSeason();
@@ -37,11 +43,20 @@ let getrandomStyle = () => {
       return htmlFashionTable;
   }
 
-let btn = document.querySelector("#add-season");
-let week = 1;
+
+
+// adding button
 btn.addEventListener('click', function (event) {
   finalHtml=putSeason(week);
   fashionTable.innerHTML = finalHtml.join("\n");
   
   week++;
   });
+// clearing button
+clearBtn.addEventListener('click', function (event) {
+  htmlFashionTable=[];
+        fashionTable.innerHTML = "";
+        week=1
+
+    });
+  

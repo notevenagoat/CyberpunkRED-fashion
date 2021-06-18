@@ -18,9 +18,10 @@
      <script src="./js/generator.js" defer></script> 
 </head>
 
-<body>
-  <table class="table table-dark table-striped">
-    <thead>
+<body style="background-color:black">
+  <p class="fs-3 text-danger p-3"> CyberpunkRED - Weekly Fashion Generator</p>
+  <table class="table table-dark table-striped border-danger m-3" style="max-width: 95%;">
+    <thead class="">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Bottoms</th>
@@ -29,28 +30,24 @@
         <th scope="col">Footwear</th>
         <th scope="col">Jewelry</th>
         <th scope="col">Hat</th>
-        <th scope="col">Accessory</th>
+        <th scope="col">Eyewear</th>
       </tr>
     </thead>
     <tbody  id="fashionTable">
       <tr  >
         <tr >
-          <th scope="row" >value</th>
-          <td>${value[0]}</td>
-          <td>${value[1]}</td>
-          <td>${value[2]}</td>
-          <td>${value[3]}</td>
-          <td>${value[4]}</td>
-          <td>${value[5]}</td>
-          <td>${value[6]}</td>
-        </tr>`
+   
+        </tr>
         <tr >
          
-        </tr>`
+        </tr>
       </tr>
    
     </tbody>
   </table>
+  <div class="m-3">
   <button type="button" class="btn btn-dark" id="add-season">Add season</button>
+  <button type="button" class="btn btn-dark" id="clear-btn">Clear</button>
+</div>
 </body>
 </html>
